@@ -43,9 +43,9 @@ void loop() {
   int w = analogReadwater();
   delay(200);
   int p = analogReadphoton();
-  delay(200);
+  delay(500);
   int t = analogReadtemp();
-  delay(200);
+  delay(500);
   Serial.print("humid = ");
   Serial.print(h);
   Serial.print("\n");
@@ -60,5 +60,6 @@ void loop() {
 
   Serial.print("temp = ");
   Serial.print(t);
+  Serial.print("\n");
   Serial.print("\n");
 }

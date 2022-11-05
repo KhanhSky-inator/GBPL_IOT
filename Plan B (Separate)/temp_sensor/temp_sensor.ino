@@ -8,6 +8,6 @@ void loop()
   double val=analogRead(3);
   double fenya=(val/1023)*5;
   double r=(5-fenya)/fenya*4700;
-  Serial.println(val);
+  Serial.println( 1/(  log(r/10000) /3950 + 1/(25+273.15))-273.15);
   delay(1000);
 }
